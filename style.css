@@ -112,9 +112,12 @@ h1 {
   font-size: 18px;
   padding: 30px 10px;
   font-weight: normal;
+  display: inline-block;
 }
 
-.div-c{padding: 30px 20px;}
+.div-c{padding: 30px 20px;
+display: inline-block;
+}
 
 
 .blinking{
