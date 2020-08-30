@@ -1,126 +1,130 @@
+body {
+  background-image: linear-gradient(to right, #6e6e6e, #474747);
+  padding: 0; 
+  margin: 0;   
+}
 .hallo{
 background:lightred;
 border:none;
+border: 2px solid #c75a00;
 color:black;
 text-align:center;
-padding:13px;
 text-decoration:none;
 display:inline-block;
-font-size:14px;
-margin:3px 1/2px;
 cursor:pointer;
 border-radius :;
-box-shadow: 10px 20px 30px gray;
-}
-#my {
-    color: #CC9933;
-    text-shadow: 1px 1px 2px black, 0 0 25px #339999, 0 0 5px darkblue;
-}
-#r {
-    color: black;
-    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px silver;
-}
-.hallo {
-    background-color: white; 
-    color: black; 
-    border: 2px solid #4CAF50;
-}
-
-
-.cap{
-background-color:silver;
+box-shadow: 10px 10px 20px black;}
+.imgone{padding: 5px}
+.shadow{
 background:lightred;
 border:none;
-color:black;
+color:black;e
 text-align:center;
-padding:5px;
 text-decoration:none;
 display:inline-block;
-font-size:14px;
-margin:3px 1/2px;
 cursor:pointer;
-border-radius :7px;
-box-shadow: 10px 20px 30px gray;
-}
-.cap {
-    background-color: white; 
-    color: black; 
-    border: 2px solid brown;
+border-radius :;
+box-shadow: 3px 3px 6px black;
 }
 
-#g:hover{background:white;}
-body{background
-height:px;
-background:-moz-linear-gradient(left,gray,silver);
-}
-body{background
-    height: 200px;
-    background: -webkit-repeating-linear-gradient(left,gray,silver); /* For Safari 5.1 to 6.0 */
-    background: -o-repeating-linear-gradient(left,gray,silver); /* For Opera 11.1 to 12.0 */
-    background: -moz-repeating-linear-gradient(left,gray,silver); /* For Firefox 3.6 to 15 */
-    background: repeating-linear-gradient(left,gray,silver); /* Standard syntax (must be last) */
-}
-}
-#k{color:green}
-#g{color:black}
 
-#m:hover{background:white}
-#t:hover{background:#FFFFCC}
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 2px;
+  width: 150px; 
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  color: #bfbfbf;
+  text-shadow: 3px 3px 4px #1c1c1c;
+  font-size: 40px;
+  padding: 10px;
+  -webkit-text-stroke-width: 0.5px; 
+  -webkit-text-stroke-color: #6b6b6b; 
+}
+
 .button {
-    position: relative;
-    background-color: darksilver;
-    border: none;
-    font-size: 15px;
-    color: black;
-    padding: 2px 6px;
-    width: 90px;
-    text-align: center;
-    -webkit-transition-duration: 0.4s; 
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
+  background-color: #a1a1a1; /* Green */
+  border: 2px solid #555555;
+  color: #000000;
+  padding: 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+  width: 103px;
+  height: 38px;
+  margin: 4px 2px;
+  size: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: 0.3s;
 }
 
-.button:after {
-    content: "";
-    background: #90EE90;
-    display: block;
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
-    margin-left: -20px!important;
-    margin-top: -120%;
-    opacity: 0;
-    transition: all 0.8s
+.button:hover {
+  background-color: #d9d9d9;
+  color: #050047;
+
+  
 }
 
-.button:active:after {
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s
-}
-#h {
-    width: 190px;
-    height: 190px;
-    background-color: ;
-    color:none ;
-    -webkit-animation: mymove 2s infinite; 
-    animation: mymove 2s infinite;
+.font {
+  font-family: 'Archivo Narrow';
+  color: #d6d6d6;
+  text-shadow: 3px 3px 4px #1c1c1c;
+  font-size: 30px;
+  -webkit-text-stroke-width: 0.5px; 
+  -webkit-text-stroke-color: #6b6b6b; 
 }
 
-
-
-@-webkit-keyframes mymove {
-    50% {box-shadow: 10px 20px 30px black;width: 200px;
-    height: 190px;}
-
+.fontsec {
+  font-family: McLaren;
+  color: white;
+  text-shadow: 3px 3px 4px #1c1c1c;
+  font-size: 17px;
+  -webkit-text-stroke-width: 0.5px; 
+  -webkit-text-stroke-color: #bfbfbf;
+   width:650px;
 }
 
 
-@keyframes mymove {
-    50% {box-shadow: 10px 20px 30px black;width: 200px;
-    height: 190px;}
+
+
+@media screen and (max-width: 800px) {
+
+    .fontsec {width: 88%;}
+    .button {width: 22%;}
+    .foot {width:85%;}
 }
-#q{border-radius:10px}
+
+#icon {
+  color: white;
+  text-shadow: 1px 2px 6px black;
+}
+
+.foot {
+  font-family: Andada;
+  color: white;
+  text-shadow: 3px 3px 4px #1c1c1c;
+  font-size: 18px;
+  padding: 30px 10px;
+  font-weight: normal;
+}
+
+.div-c{padding: 30px 20px;}
+
+
+.blinking{
+    animation:blinkingText 1.0s infinite;
+}
+@keyframes blinkingText{
+
+    0%  { color: white;       }
+    49% { color: transparent; }
+    50% { color: transparent; }
+    99% { color:transparent;  }
+   100% { color: white;       }
+}
