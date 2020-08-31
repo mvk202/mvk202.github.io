@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient(to right, #6e6e6e, #474747);
+  background-image: linear-gradient(to right, #121212, #141414);
   padding: 0; 
   margin: 0;   
 }
@@ -14,7 +14,9 @@ display:inline-block;
 cursor:pointer;
 border-radius :;
 box-shadow: 10px 10px 20px black;}
+
 .imgone{padding: 5px}
+
 .shadow{
 background:lightred;
 border:none;
@@ -24,7 +26,7 @@ text-decoration:none;
 display:inline-block;
 cursor:pointer;
 border-radius :;
-box-shadow: 3px 3px 6px black;
+box-shadow: 3px 3px 8px black;
 }
 
 
@@ -50,6 +52,7 @@ h1 {
   border: 2px solid #555555;
   color: #000000;
   padding: 6px;
+  display: inline-block;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -62,11 +65,14 @@ h1 {
   cursor: pointer;
   border-radius: 3px;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .button:hover {
   background-color: #d9d9d9;
-  color: #050047;
+  color: #474747;
+  cursor:pointer;  
+
 
   
 }
@@ -98,6 +104,8 @@ h1 {
     .fontsec {width: 88%;}
     .button {width: 22%;}
     .foot {width:85%;}
+    .imgsc{width: 90%;}
+    li{width:70%; text-align:left;}
 }
 
 #icon {
@@ -112,9 +120,12 @@ h1 {
   font-size: 18px;
   padding: 30px 10px;
   font-weight: normal;
+  display: inline-block;
 }
 
-.div-c{padding: 30px 20px;}
+.div-c{padding: 30px 20px;
+display: inline-block;
+}
 
 
 .blinking{
@@ -128,3 +139,44 @@ h1 {
     99% { color:transparent;  }
    100% { color: white;       }
 }
+
+.fontpos{  font-family: McLaren;
+  color: white;
+  text-shadow: 3px 3px 4px #1c1c1c;
+  font-size: 16px;
+  -webkit-text-stroke-width: 0.5px; 
+  -webkit-text-stroke-color: #bfbfbf;
+   text-align: center;
+   display:inline-block;
+}
+
+.textone{color:#e0d100;
+ text-decoration: none;
+ display: inline-block;}
+
+.textone:hover {
+  color: #00e313;
+
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: -1;
+}
+
+.imgsc { height: 210px;
+width: 320px;
+cursor: pointer;
+border: 2px solid #cccccc;
+
+ }
+
+ .imgsc:hover{
+display: block;
+box-shadow: 5px 8px 10px #028f00;
+transition: .5s ease;
+ }
