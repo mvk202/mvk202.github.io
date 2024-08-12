@@ -32,31 +32,29 @@
         </div>
     </section>
 
-    <script>
-        function adjustForMobile() {
-            const width = window.innerWidth;
+<script>
+    function adjustForMobile() {
+        const width = window.innerWidth;
 
-            // Adjust styles based on screen width
-            const navLinks = document.querySelectorAll('nav ul li a');
+        // Adjust styles based on screen width
+        const navLinks = document.querySelectorAll('nav ul li a');
 
-            if (width <= 768) {
-                navLinks.forEach(link => {
-                    link.style.padding = '10px 15px'; // Adjust padding for smaller screens
-                    link.style.fontSize = '14px'; // Adjust font size for smaller screens
-                });
-            } else {
-                navLinks.forEach(link => {
-                    link.style.padding = '10px 20px'; // Default padding
-                    link.style.fontSize = '16px'; // Default font size
-                });
-            }
+        if (width <= 768) {
+            navLinks.forEach(link => {
+                link.style.padding = '10px 15px'; // Adjust padding for smaller screens
+                link.style.fontSize = '14px'; // Adjust font size for smaller screens
+            });
+        } else {
+            navLinks.forEach(link => {
+                link.style.padding = '10px 20px'; // Default padding
+                link.style.fontSize = '16px'; // Default font size
+            });
         }
+    }
 
-        // Call the function on page load
-        adjustForMobile();
+    // Call the function on page load
+    adjustForMobile();
 
-        // Call the function on window resize
-        window.addEventListener('resize', adjustForMobile);
-    </script>
-</body>
-</html>
+    // Call the function on window resize
+    window.addEventListener('resize', adjustForMobile);
+</script>
