@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Appstrike</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
     <header>
         <div class="logo">Appstrike</div>
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
         <nav>
             <ul>
                 <li><a href="#">Services</a></li>
+                <li><a href="#">Products</a></li>
                 <li><a href="#">Solutions</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Products</a></li>
                 <li><a href="#">About</a></li>
             </ul>
         </nav>
@@ -31,29 +32,13 @@
             <a href="#" class="cta-button">Get in Touch</a>
         </div>
     </section>
-<script>
-    function adjustForMobile() {
-        const width = window.innerWidth;
-        const navLinks = document.querySelectorAll('nav ul li a');
 
-        if (width <= 768) {
-            navLinks.forEach(link => {
-                link.style.padding = '10px 15px'; // Adjust padding for smaller screens
-                link.style.fontSize = '14px'; // Adjust font size for smaller screens
-            });
-        } else {
-            navLinks.forEach(link => {
-                link.style.padding = '10px 20px'; // Default padding
-                link.style.fontSize = '16px'; // Default font size
-            });
-        }
-    }
-
-    // Call the function on page load
-    adjustForMobile();
-
-    // Call the function on window resize
-    window.addEventListener('resize', adjustForMobile);
-</script>
-    </body>
+    <script>
+        // Toggle navigation menu for mobile view
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('open');
+        });
+    </script>
+</body>
 </html>
