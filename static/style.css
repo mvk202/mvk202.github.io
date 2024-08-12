@@ -8,7 +8,7 @@
 /* Body styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #0D0C1D; /* Darker background color */
+    background-color: #0D0C1D; /* Darker background color to match the first image */
     color: #FFFFFF;
 }
 
@@ -32,28 +32,16 @@ nav ul {
     gap: 20px;
 }
 
-nav ul li {
-    display: inline-block;
-}
-
 nav ul li a {
-    display: inline-block;
-    color: #FFFFFF; /* Text color */
-    padding: 10px 20px; /* Padding for button effect */
     text-decoration: none;
+    color: #FFFFFF;
     font-size: 16px;
-    font-weight: bold;
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-nav ul li a:hover {
-    color: #BBBBBB; /* Slightly lighter color on hover */
 }
 
 /* Hero section styling */
 .hero {
     padding: 80px 50px;
-    background: linear-gradient(135deg, #242042, #1D1A35); /* Gradient updated */
+    background: linear-gradient(135deg, #242042, #1D1A35); /* Gradient updated to match the UI */
     border-radius: 20px;
     margin: 60px auto;
     max-width: 1100px;
@@ -74,8 +62,8 @@ nav ul li a:hover {
 
 .hero p {
     font-size: 18px;
-    line-height: 1.4; /* Adjusted to decrease space between lines */
-    margin-bottom: 10px; /* Reduced margin between paragraphs */
+    line-height: 1.4; /* Adjusted to decrease the space between lines */
+    margin-bottom: 10px; /* Reduced the margin between paragraphs */
 }
 
 .cta-button {
@@ -87,85 +75,4 @@ nav ul li a:hover {
     font-weight: bold;
     margin-top: 30px;
     display: inline-block;
-}
-
-/* Mobile styles */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start; /* Align items to the start for mobile */
-        padding: 20px;
-    }
-
-    .logo {
-        margin-bottom: 20px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-        text-align: left; /* Align text to the left */
-        width: 100%; /* Ensure nav takes full width */
-    }
-
-    nav ul li {
-        margin: 0;
-    }
-
-    nav ul li a {
-        padding: 10px 15px; /* Adjust padding for smaller screens */
-        font-size: 14px; /* Adjust font size for smaller screens */
-    }
-
-    .hero {
-        padding: 40px 20px;
-        text-align: left; /* Ensure text is left-aligned on mobile */
-        margin: 20px auto;
-    }
-
-    .hero-content .tagline {
-        font-size: 16px;
-    }
-
-    .hero h1 {
-        font-size: 32px;
-    }
-
-    .hero p {
-        font-size: 16px;
-    }
-
-    .cta-button {
-        padding: 10px 20px;
-        font-size: 16px;
-    }
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media (max-width: 600px) {
-    nav ul li a {
-        padding: 8px 12px; /* Adjust padding for very small screens */
-        font-size: 12px; /* Adjust font size for very small screens */
-    }
-
-    .hero {
-        padding: 20px 10px;
-    }
-
-    .hero-content .tagline {
-        font-size: 14px;
-    }
-
-    .hero h1 {
-        font-size: 28px;
-    }
-
-    .hero p {
-        font-size: 14px;
-    }
-
-    .cta-button {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
 }
