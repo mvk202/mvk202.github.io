@@ -96,45 +96,6 @@ header {
     cursor: pointer;
 }
 
-/* Hero section styling */
-.hero {
-    padding: 80px 50px;
-    background: linear-gradient(135deg, #242042, #1D1A35); /* Gradient updated */
-    border-radius: 20px;
-    margin: 60px auto;
-    max-width: 1100px;
-    text-align: left;
-}
-
-.hero-content .tagline {
-    color: #BBB8FF;
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-
-.hero h1 {
-    font-size: 42px;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-.hero p {
-    font-size: 18px;
-    line-height: 1.4; /* Adjusted to decrease space between lines */
-    margin-bottom: 10px; /* Reduced margin between paragraphs */
-}
-
-.cta-button {
-    background-color: #FFFFFF;
-    color: #2A2358;
-    padding: 15px 30px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 30px;
-    display: inline-block;
-}
-
 /* Mobile styles */
 @media (max-width: 768px) {
     .desktop-nav {
