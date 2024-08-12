@@ -3,53 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SecureDevs Labs - Coming Soon</title>
- <link rel="stylesheet" href="/static/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href='https://fonts.googleapis.com/css?family=McLaren' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Andada' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Archivo Narrow' rel='stylesheet'>
+    <title>Appstrike</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>SecureDevs Labs</h1>
-        <p class="description">We are currently building and will be live soon. Stay tuned!</p>
-        <div class="terminal">
-            <span class="typed-text"></span><span class="cursor">_</span>
-        </div>
-    </div>
+    <header>
+        <div class="logo">Appstrike</div>
+        <nav>
+            <ul>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const typedTextSpan = document.querySelector('.typed-text');
-            const textToType = 'Initializing...';
-            const typingDelay = 100;
-            const cursorBlinkDelay = 400; // Adjust blinking speed
-            let charIndex = 0;
-        
-            function type() {
-                if (charIndex < textToType.length) {
-                    typedTextSpan.textContent += textToType.charAt(charIndex);
-                    charIndex++;
-                    setTimeout(type, typingDelay);
-                } else {
-                    setTimeout(blinkCursor, cursorBlinkDelay);
-                }
-            }
-        
-            function blinkCursor() {
-                typedTextSpan.textContent = typedTextSpan.textContent.slice(0, -1); // Remove the last character
-                typedTextSpan.textContent += '_'; // Append underscore for cursor
-                setTimeout(unblinkCursor, cursorBlinkDelay);
-            }
-        
-            function unblinkCursor() {
-                typedTextSpan.textContent = typedTextSpan.textContent.slice(0, -1); // Remove the underscore
-                setTimeout(blinkCursor, cursorBlinkDelay);
-            }
-        
-            setTimeout(type, typingDelay);
-        });
-    </script>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="tagline">#SecureSolutions</div>
+            <h1>Breaking Security to Protect Your Assets</h1>
+            <p>Secure your digital assets with our state-of-the-art,</p>
+            <p>customizable penetration testing services.</p>
+            <p>Stay ahead of threats with continuous monitoring</p>
+            <p>and expert insights designed to protect your business.</p>
+            <a href="#" class="cta-button">Get in Touch</a>
+        </div>
+    </section>
 </body>
 </html>
