@@ -16,9 +16,10 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 40px;
     background-color: #0A0915; /* Darker header background */
-    position: relative; /* To help with positioning navigation in mobile view */
+    position: relative; /* For positioning menu toggle */
 }
 
 .logo {
@@ -27,24 +28,30 @@ header {
     color: #FFFFFF;
 }
 
+.menu-toggle {
+    display: none; /* Hide menu toggle by default */
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Navigation styling */
 nav {
-    position: absolute; /* Position nav absolutely in mobile view */
-    top: 0;
-    left: 0;
-    width: 100%; /* Full width for mobile */
+    position: relative;
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    gap: 10px;
-    padding: 20px;
-    background-color: #0A0915; /* Background for the navigation */
+    flex-direction: row; /* Horizontal layout by default */
+    gap: 20px;
+    padding: 0;
 }
 
 nav ul li {
-    display: block;
+    display: inline-block;
 }
 
 nav ul li a {
@@ -53,7 +60,6 @@ nav ul li a {
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
-    display: block; /* Block display to take full width */
     border: none; /* Remove any borders */
     transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
@@ -113,46 +119,42 @@ nav ul li a:hover {
         margin-bottom: 20px;
     }
 
+    .menu-toggle {
+        display: block; /* Show menu toggle in mobile view */
+    }
+
     nav {
-        position: static; /* Static position in mobile view */
-        width: 100%; /* Full width for mobile */
+        position: static; /* Static position for mobile view */
     }
 
     nav ul {
+        display: none; /* Hide the menu items by default */
         flex-direction: column; /* Stack items vertically */
         gap: 10px;
-        text-align: left; /* Align text to the left */
+        width: 100%; /* Full width */
+        padding: 0;
+        background-color: #0A0915; /* Background for dropdown menu */
     }
 
-    .hero {
-        padding: 40px 20px;
-        text-align: left; /* Ensure text is left-aligned on mobile */
-        margin: 20px auto;
+    nav.open ul {
+        display: flex; /* Show menu items when opened */
     }
 
-    .hero-content .tagline {
-        font-size: 16px;
+    nav ul li {
+        display: block; /* Block display to take full width */
     }
 
-    .hero h1 {
-        font-size: 32px;
-    }
-
-    .hero p {
-        font-size: 16px;
-    }
-
-    .cta-button {
-        padding: 10px 20px;
-        font-size: 16px;
+    nav ul li a {
+        padding: 15px; /* Adjust padding for mobile */
+        font-size: 18px; /* Adjust font size for mobile */
     }
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media (max-width: 600px) {
     nav ul li a {
-        padding: 8px 12px; /* Adjust padding for very small screens */
-        font-size: 12px; /* Adjust font size for very small screens */
+        padding: 12px; /* Adjust padding for very small screens */
+        font-size: 16px; /* Adjust font size for very small screens */
     }
 
     .hero {
@@ -160,7 +162,7 @@ nav ul li a:hover {
     }
 
     .hero-content .tagline {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .hero h1 {
@@ -172,7 +174,7 @@ nav ul li a:hover {
     }
 
     .cta-button {
-        padding: 8px 16px;
+        padding: 10px 20px;
         font-size: 14px;
     }
 }
