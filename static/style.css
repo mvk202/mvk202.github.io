@@ -8,13 +8,8 @@
 /* Body styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #0D0C1D;
+    background-color: #0D0C1D; /* Darker background color */
     color: #FFFFFF;
-    transition: margin-top 0.3s ease;
-}
-
-body.menu-open {
-    margin-top: 60px;
 }
 
 /* Header styling */
@@ -22,13 +17,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #0A0915;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+    padding: 20px 40px;
+    background-color: #0A0915; /* Darker header background */
 }
 
 .logo {
@@ -37,55 +27,82 @@ header {
     color: #FFFFFF;
 }
 
-.desktop-nav {
-    display: none;
+.desktop-nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
 }
 
-.mobile-menu-icon {
-    font-size: 24px;
-    cursor: pointer;
+.desktop-nav ul li {
+    display: inline-block;
 }
 
-/* Mobile nav styling */
+.desktop-nav ul li a {
+    color: #FFFFFF; /* Text color */
+    padding: 10px 20px; /* Padding for button effect */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border: none; /* Remove any borders */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.desktop-nav ul li a:hover {
+    color: #BBBBBB; /* Slightly lighter color on hover */
+}
+
+/* Mobile navigation styling */
 .mobile-nav {
-    display: none;
-    position: fixed;
-    top: 60px;
-    left: 0;
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
     right: 0;
-    background-color: #0A0915;
-    padding: 20px;
-    z-index: 999;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.mobile-nav.active {
-    display: block;
+    background-color: #0A0915; /* Background for dropdown menu */
+    width: 100%; /* Full width */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3); /* Shadow for dropdown */
 }
 
 .mobile-nav ul {
     list-style-type: none;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    padding: 0;
 }
 
 .mobile-nav ul li {
-    margin-bottom: 15px;
+    display: block; /* Block display to take full width */
 }
 
 .mobile-nav ul li a {
+    color: #FFFFFF; /* Text color */
+    padding: 15px; /* Adjust padding for mobile */
+    font-size: 18px; /* Adjust font size for mobile */
     text-decoration: none;
-    color: #FFFFFF;
-    font-size: 18px;
     display: block;
-    padding: 10px 0;
+    border: none; /* Remove any borders */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.mobile-nav ul li a:hover {
+    color: #BBBBBB; /* Slightly lighter color on hover */
+}
+
+/* Mobile menu icon styling */
+.mobile-menu-icon {
+    display: none; /* Hidden by default */
+    font-size: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
 }
 
 /* Hero section styling */
 .hero {
-    padding: 80px 20px 40px;
-    background: linear-gradient(135deg, #242042, #1D1A35);
+    padding: 80px 50px;
+    background: linear-gradient(135deg, #242042, #1D1A35); /* Gradient updated */
     border-radius: 20px;
-    margin: 20px auto;
-    max-width: 100%;
+    margin: 60px auto;
+    max-width: 1100px;
     text-align: left;
 }
 
@@ -96,61 +113,43 @@ header {
 }
 
 .hero h1 {
-    font-size: 32px;
+    font-size: 42px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .hero p {
-    font-size: 16px;
-    line-height: 1.4;
-    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.4; /* Adjusted to decrease space between lines */
+    margin-bottom: 10px; /* Reduced margin between paragraphs */
 }
 
 .cta-button {
     background-color: #FFFFFF;
     color: #2A2358;
-    padding: 12px 24px;
+    padding: 15px 30px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 30px;
     display: inline-block;
 }
 
-/* Media query for desktop */
-@media (min-width: 768px) {
-    .mobile-menu-icon, .mobile-nav {
-        display: none;
-    }
-
+/* Mobile styles */
+@media (max-width: 768px) {
     .desktop-nav {
-        display: block;
+        display: none; /* Hide desktop nav on mobile */
     }
 
-    .desktop-nav ul {
-        list-style-type: none;
-        display: flex;
-        gap: 20px;
+    .mobile-menu-icon {
+        display: block; /* Show menu toggle in mobile view */
     }
 
-    .desktop-nav ul li a {
-        text-decoration: none;
-        color: #FFFFFF;
-        font-size: 16px;
+    .mobile-nav {
+        display: none; /* Hide mobile nav by default */
     }
 
-    .hero {
-        padding: 80px 50px;
-        margin: 60px auto;
-        max-width: 1100px;
-    }
-
-    .hero h1 {
-        font-size: 42px;
-    }
-
-    .hero p {
-        font-size: 18px;
+    .mobile-nav.open {
+        display: block; /* Show mobile nav when open */
     }
 }
