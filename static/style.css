@@ -1,103 +1,78 @@
+/* General reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body styling */
 body {
-    background-color: #121212;
-    color: #ffffff;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, sans-serif;
+    background-color: #0D0C1D; /* Darker background color to match the first image */
+    color: #FFFFFF;
+}
+
+/* Header styling */
+header {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #0A0915; /* Darker header background */
 }
 
-.container {
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #444;
-    border-radius: 10px;
-    background-color: #1e1e1e;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-    max-width: 90%; /* Adjust the max-width for responsiveness */
-    margin: auto; /* Center the container */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
 }
 
-h1 {
-    font-size: 2.5em; /* Adjust font size for mobile */
-    margin-bottom: 20px;
-    animation: glow 1.5s infinite alternate;
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
 }
 
-.description {
-    font-size: 1em; /* Adjust font size for mobile */
-    margin-bottom: 20px;
-    animation: glow 1.5s infinite alternate;
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
 }
 
-.terminal {
-    font-size: 1em; /* Adjust font size for mobile */
-    color: #ffffff;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Reduce brightness of text shadow */
+/* Hero section styling */
+.hero {
+    padding: 80px 50px;
+    background: linear-gradient(135deg, #242042, #1D1A35); /* Gradient updated to match the UI */
+    border-radius: 20px;
+    margin: 60px auto;
+    max-width: 1100px;
+    text-align: left;
+}
+
+.hero-content .tagline {
+    color: #BBB8FF;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.4; /* Adjusted to decrease the space between lines */
+    margin-bottom: 10px; /* Reduced the margin between paragraphs */
+}
+
+.cta-button {
+    background-color: #FFFFFF;
+    color: #2A2358;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 30px;
     display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-}
-
-.typed-text {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typing 4s steps(40, end), blink 0.7s step-end infinite alternate;
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-.cursor {
-    display: inline-block;
-    width: 4px; /* Adjust cursor width for mobile */
-    height: 0.8em; /* Adjust cursor height for mobile */
-    background-color: rgba(255, 255, 255, 0.5); /* Reduce brightness of cursor */
-    animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-    50% {
-        opacity: 0;
-    }
-}
-
-@keyframes glow {
-    from {
-        text-shadow: 0 0 3px rgba(255, 255, 255, 0.5), 0 0 6px rgba(255, 255, 255, 0.5), 0 0 9px rgba(255, 255, 255, 0.5), 0 0 12px rgba(255, 255, 255, 0.5);
-    }
-    to {
-        text-shadow: 0 0 6px rgba(255, 255, 255, 0.5), 0 0 12px rgba(255, 255, 255, 0.5), 0 0 18px rgba(255, 255, 255, 0.5), 0 0 24px rgba(255, 255, 255, 0.5);
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    h1 {
-        font-size: 2em; /* Further adjust font size for smaller screens */
-    }
-    
-    .description {
-        font-size: 0.9em; /* Further adjust font size for smaller screens */
-    }
-    
-    .terminal {
-        font-size: 0.9em; /* Further adjust font size for smaller screens */
-    }
 }
