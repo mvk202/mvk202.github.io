@@ -19,6 +19,7 @@ header {
     align-items: center;
     padding: 20px 40px;
     background-color: #0A0915; /* Darker header background */
+    position: relative;
 }
 
 .logo {
@@ -68,6 +69,7 @@ header {
     display: flex;
     flex-direction: column; /* Stack items vertically */
     padding: 0;
+    margin: 0;
 }
 
 .mobile-nav ul li {
@@ -96,8 +98,45 @@ header {
     cursor: pointer;
 }
 
-/* Mobile styles */
+/* Hero section styling */
+.hero {
+    padding: 80px 50px;
+    background: linear-gradient(135deg, #242042, #1D1A35); /* Gradient updated */
+    border-radius: 20px;
+    margin: 60px auto;
+    max-width: 1100px;
+    text-align: left;
+    position: relative; /* Ensure positioning for responsiveness */
+}
+
+/* Responsive hero content styling */
+.hero-content {
+    max-width: 90%; /* Adjust max-width for smaller screens */
+    margin: 0 auto;
+}
+
+/* Adjust font sizes and spacing for smaller screens */
 @media (max-width: 768px) {
+    .hero {
+        padding: 40px 20px; /* Reduce padding on smaller screens */
+        margin: 30px auto; /* Adjust margin */
+    }
+
+    .hero h1 {
+        font-size: 28px; /* Smaller font size for smaller screens */
+        margin-bottom: 20px; /* Reduce margin */
+    }
+
+    .hero p {
+        font-size: 16px; /* Smaller font size for smaller screens */
+        margin-bottom: 8px; /* Reduce margin */
+    }
+
+    .cta-button {
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
     .desktop-nav {
         display: none; /* Hide desktop nav on mobile */
     }
