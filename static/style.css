@@ -149,3 +149,26 @@ nav {
         margin-top: 20px;
     }
 }
+
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+    .hero-content {
+        text-align: left; /* Aligns the content to the left */
+    }
+
+    .hero h1 {
+        font-size: 32px; /* Adjusts the font size for mobile */
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 16px; /* Adjusts the paragraph font size for mobile */
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+
+    .cta-button {
+        margin-top: 20px;
+        text-align: left; /* Ensures the button is aligned to the left */
+    }
+}
