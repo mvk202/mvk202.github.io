@@ -1,174 +1,46 @@
-/* General reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appstrike</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Appstrike</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
 
-/* Body styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #0D0C1D;
-    color: #FFFFFF;
-}
-
-/* Header styling */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: #0A0915;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #FFFFFF;
-}
-
-nav {
-    position: relative;
-}
-
-.nav-list {
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-list li a {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-size: 16px;
-}
-
-/* Menu Toggle (Mobile) */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.menu-toggle .hamburger {
-    width: 25px;
-    height: 2px;
-    background-color: #FFFFFF;
-    margin: 4px 0;
-}
-
-.nav-list {
-    flex-direction: row;
-}
-
-/* Hero section styling */
-.hero {
-    padding: 80px 50px;
-    background: linear-gradient(135deg, #242042, #1D1A35);
-    border-radius: 20px;
-    margin: 60px auto;
-    max-width: 500px;
-    text-align: left;
-}
-
-.hero-content .tagline {
-    color: #BBB8FF;
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-
-.hero h1 {
-    font-size: 42px;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-.hero p {
-    font-size: 18px;
-    line-height: 1.4;
-    margin-bottom: 10px;
-}
-
-.cta-button {
-    background-color: #FFFFFF;
-    color: #2A2358;
-    padding: 15px 30px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 30px;
-    display: inline-block;
-}
-
-/* Media Queries for Mobile View */
-@media (max-width: 768px) {
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-    }
-
-    .menu-toggle {
-        display: flex;
-        justify-content: flex-end; /* Aligns the toggle button to the right */
-        margin-left: auto; /* Ensures the toggle button is pushed to the right */
-    }
-
-    .nav-list {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #0A0915;
-        position: absolute;
-        top: 60px;
-        right: 0; /* Positions the dropdown menu to the right */
-        padding: 10px 0;
-        border-radius: 0 0 10px 10px;
-    }
-
-    .nav-list.show {
-        display: flex;
-    }
-
-    .nav-list li {
-        margin: 10px 0;
-        text-align: left; /* Align text to the left inside the dropdown */
-    }
-
-    .hero {
-        padding: 40px 20px;
-        text-align: center;
-    }
-
-    .hero h1 {
-        font-size: 32px;
-    }
-
-    .cta-button {
-        margin-top: 20px;
-    }
-}
-
-/* Media Queries for Mobile View */
-@media (max-width: 768px) {
-    .hero-content {
-        text-align: left; /* Aligns the content to the left */
-    }
-
-    .hero h1 {
-        font-size: 32px; /* Adjusts the font size for mobile */
-        margin-bottom: 20px;
-    }
-
-    .hero p {
-        font-size: 16px; /* Adjusts the paragraph font size for mobile */
-        line-height: 1.4;
-        margin-bottom: 10px;
-    }
-
-    .cta-button {
-        margin-top: 20px;
-        text-align: left; /* Ensures the button is aligned to the left */
-    }
-}
+    <section class="hero">
+        <div class="hero-content">
+            <div class="tagline">#SecureSolutions</div>
+            <h1>Breaking Security to Protect Your Assets</h1>
+            <p>Secure your digital assets with our state-of-the-art,</p>
+            <p>customizable penetration testing services.</p>
+            <p>Stay ahead of threats with continuous monitoring</p>
+            <p>and expert insights designed to protect your business.</p>
+            <a href="#" class="cta-button">Get in Touch</a>
+        </div>
+    </section>
+<center>
+    <footer>
+        <p>&copy; 2024 Appstrike. All Rights Reserved.</p>
+    </footer>
+</center>
+    <script src="scripts.js"></script>
+</body>
+</html>
