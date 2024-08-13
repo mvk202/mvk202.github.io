@@ -67,7 +67,7 @@ nav {
     background: linear-gradient(135deg, #242042, #1D1A35);
     border-radius: 20px;
     margin: 60px auto;
-    max-width: 1100px;
+    max-width: 500px;
     text-align: left;
 }
 
@@ -103,13 +103,16 @@ nav {
 /* Media Queries for Mobile View */
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         padding: 10px 20px;
     }
 
     .menu-toggle {
         display: flex;
+        justify-content: flex-end; /* Aligns the toggle button to the right */
+        margin-left: auto; /* Ensures the toggle button is pushed to the right */
     }
 
     .nav-list {
@@ -119,7 +122,7 @@ nav {
         background-color: #0A0915;
         position: absolute;
         top: 60px;
-        left: 0;
+        right: 0; /* Positions the dropdown menu to the right */
         padding: 10px 0;
         border-radius: 0 0 10px 10px;
     }
@@ -130,7 +133,7 @@ nav {
 
     .nav-list li {
         margin: 10px 0;
-        text-align: center;
+        text-align: left; /* Align text to the left inside the dropdown */
     }
 
     .hero {
