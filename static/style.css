@@ -50,15 +50,11 @@ nav {
     cursor: pointer;
 }
 
-.menu-toggle .hamburger,
-.menu-toggle .hamburger::before,
-.menu-toggle .hamburger::after {
+.menu-toggle .hamburger {
     width: 25px;
     height: 2px;
     background-color: #FFFFFF;
-    content: '';
-    display: block;
-    margin: 5px 0;
+    margin: 4px 0;
 }
 
 .nav-list {
