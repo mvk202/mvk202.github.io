@@ -1,10 +1,7 @@
-// script.js
+// Toggle mobile menu
+const menuToggle = document.getElementById('mobile-menu');
+const navList = document.querySelector('.nav-list');
 
-document.addEventListener('DOMContentLoaded', function() {
-    const menuIcon = document.querySelector('.mobile-menu-icon');
-    const mobileNav = document.querySelector('.mobile-nav');
-
-    menuIcon.addEventListener('click', function() {
-        mobileNav.classList.toggle('open');
-    });
+menuToggle.addEventListener('click', () => {
+    navList.classList.toggle('show');
 });
