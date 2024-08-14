@@ -3,47 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appstrike</title>
-    <link rel="stylesheet" href="static/style.css">
+    <title>Appstrike - Secure Solutions</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">Appstrike</div>
-        <div class="menu-toggle" id="mobile-menu">
-            <div class="hamburger"></div>
-            <div class="hamburger"></div>
-            <div class="hamburger"></div>
-        </div>
-        <nav>
-            <ul class="nav-list">
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Solutions</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <div class="hero-content">
-            <div class="tagline">#SecureSolutions</div>
+    <div class="container">
+        <header>
+            <div class="logo">Appstrike</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav id="nav-list">
+                <a href="#">Services</a>
+                <a href="#">Products</a>
+                <a href="#">Solutions</a>
+                <a href="#">Blog</a>
+                <a href="#">About</a>
+            </nav>
+        </header>
+        <div class="content">
+            <span class="tag">#SecureSolutions</span>
             <h1>Breaking Security to Protect Your Assets</h1>
-            <p>Safeguard your digital assets with our cutting-edge <b>AI-driven offensive security product</b>, which autonomously identifies and exploits vulnerabilities. Complemented by our expert team's thorough manual testing services, we deliver a comprehensive approach to protecting your business from threats.</p>
-            <a href="#" class="cta-button">Get in Touch</a>
+            <p>Safeguard your digital assets with our cutting-edge AI-driven offensive security product, which autonomously identifies and exploits vulnerabilities. Complemented by our expert team's thorough manual testing services, we deliver a comprehensive approach to protecting your business from threats.</p>
+            <a href="#" class="cta-button">Get in Touch →</a>
         </div>
-    </section>
+    </div>
 
-    <footer>
+    <div class="footer">
         <p>&copy; 2024 Appstrike Labs. All Rights Reserved.</p>
-    </footer>
+    </div>
 
-    <!-- JavaScript to handle the dropdown menu -->
-    <script>
-        document.getElementById('mobile-menu').addEventListener('click', function() {
-            const navList = document.querySelector('.nav-list');
-            navList.classList.toggle('show');
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
