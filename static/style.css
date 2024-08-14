@@ -4,56 +4,51 @@ body {
     color: white;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    flex: 1; /* This makes the container grow and take up available space */
 }
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .logo {
     font-size: 24px;
     font-weight: bold;
 }
-
 nav {
     display: flex;
     align-items: center;
 }
-
 nav a {
     color: white;
     text-decoration: none;
     margin-left: 20px;
 }
-
 .menu-toggle {
     display: none;
     flex-direction: column;
     cursor: pointer;
 }
-
 .menu-toggle div {
     width: 25px;
     height: 3px;
     background-color: white;
     margin: 4px 0;
 }
-
 .content {
     background: linear-gradient(135deg, #242042, #1D1A35);
     border-radius: 20px;
     padding: 40px;
     margin-top: 40px;
 }
-
 .tag {
     background-color: #9966cc;
     color: #1a0033;
@@ -61,12 +56,10 @@ nav a {
     border-radius: 20px;
     display: inline-block;
 }
-
 h1 {
     font-size: 36px;
     margin: 20px 0;
 }
-
 .cta-button {
     background-color: white;
     color: #1a0033;
@@ -76,7 +69,6 @@ h1 {
     display: inline-block;
     margin-top: 20px;
 }
-
 /* Mobile view styling */
 @media (max-width: 768px) {
     nav {
@@ -105,14 +97,5 @@ h1 {
         display: flex;
     }
 }
-
 /* Footer Styling */
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
+.footer 
