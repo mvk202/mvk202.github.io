@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Appstrike</title>
-    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -36,11 +36,17 @@
             <a href="#" class="cta-button">Get in Touch</a>
         </div>
     </section>
-<center>
+
     <footer>
         <p>&copy; 2024 Appstrike. All Rights Reserved.</p>
     </footer>
-</center>
-    <script src="scripts.js"></script>
+
+    <!-- JavaScript to handle the dropdown menu -->
+    <script>
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+            const navList = document.querySelector('.nav-list');
+            navList.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
