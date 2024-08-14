@@ -98,4 +98,10 @@ h1 {
     }
 }
 /* Footer Styling */
-.footer 
+        .footer {
+ 
+            text-align: center;
+            color: #FFFFFF;
+            padding: 10px 0;
+            margin-top: auto; /* Pushes the footer to the bottom if the content is short */
+        }
