@@ -60,8 +60,6 @@ nav a {
     padding: 40px;
     margin-top: 60px;
     display: flex;
-    flex-direction: row; /* Align items horizontally */
-    justify-content: space-between;
 }
 
 .content {
@@ -69,17 +67,66 @@ nav a {
     max-width: 50%;
 }
 
+.service-item {
+    margin: 20px 0;
+    background: #333;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack heading and description vertically */
+    align-items: center; /* Center-align items */
+    transition: background-color 0.3s;
+}
+
+.service-item:hover {
+    background-color: #444;
+}
+
+.service-item img {
+    width: 80%; /* Make image larger, adjust percentage as needed */
+    max-width: 500px; /* Set maximum width */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Space between image and description */
+    display: block; /* Ensure image is displayed as a block element */
+    margin-left: auto; /* Center image horizontally */
+    margin-right: auto; /* Center image horizontally */
+}
+
+.service-item h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #ffffff; /* Changed to white */
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #e0e0e0;
+    margin-top: 10px; /* Space between heading and description */
+}
+
+.service-item a {
+    color: #ffffff; /* Changed to white color for links */
+    text-decoration: none;
+}
+
+.service-item a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
 .illustration {
     flex: 1;
     display: flex;
     justify-content: center;
+    height: 400px;
+    padding: 2px 2px;
     align-items: center;
 }
 
 .illustration img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px; /* Adjust as needed */
+    border-radius: 210px;
 }
 
 .tag {
@@ -125,50 +172,6 @@ p {
     color: #FFFFFF;
     padding: 20px 0;
     margin-top: auto;
-}
-
-/* Service Item Styles */
-.service-item {
-    margin: 20px 0;
-    background: #333;
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column; /* Stack heading and description vertically */
-    align-items: flex-start; /* Align items to the start of the container */
-    transition: background-color 0.3s;
-}
-
-.service-item:hover {
-    background-color: #444;
-}
-
-.service-item img {
-    width: 100px;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px; /* Space between image and description */
-}
-
-.service-item h2 {
-    font-size: 24px;
-    margin: 0;
-    color: #ffffff;
-}
-
-.service-item p {
-    font-size: 16px;
-    color: #e0e0e0;
-    margin-top: 10px; /* Space between heading and description */
-}
-
-.service-item a {
-    color: #ffffff; /* Changed to white color for links */
-    text-decoration: none;
-}
-
-.service-item a:hover {
-    text-decoration: underline; /* Underline links on hover */
 }
 
 /* Mobile View Styling */
