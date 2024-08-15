@@ -110,6 +110,10 @@ nav a {
     text-decoration: none;
 }
 
+.service-item a:visited {
+    color: #ffffff; /* Ensure visited links are also white */
+}
+
 .service-item a:hover {
     text-decoration: underline; /* Underline links on hover */
 }
